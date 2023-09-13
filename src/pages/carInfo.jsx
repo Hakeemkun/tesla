@@ -9,7 +9,7 @@ export const CarInfo = (props) => {
   return (
     <div className="infopage">
         <div className='navy'>
-            <div className='logy'><Link to={'/'} ><img src={logo} /></Link></div>
+            <div className='logy'><Link to={'/tesla'} ><img src={logo} /></Link></div>
         </div>
         <div className="infoBody">
         <Slider img1={props.img1}  img2={props.img2} img3={props.img3}/>
