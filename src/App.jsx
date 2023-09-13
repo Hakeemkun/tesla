@@ -10,7 +10,7 @@ export const App = () => {
     <div className='app'>
       <Router>
         <Routes>
-          <Route path='/' element={<Home></Home>} ></Route>
+          <Route path='/tesla' element={<Home></Home>} ></Route>
           {carsInfo.map((car)=>(
             <Route path={`/${car.model}`} element={<CarInfo img1={car.img1} img2={car.img2} img3={car.img3} title={car.title} price={car.price} speed={car.speed} range={car.range} ></CarInfo>}></Route>
           ))}
