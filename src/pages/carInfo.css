@@ -30,7 +30,7 @@
     flex-direction:column ;
     gap: 80px;
     min-width: 15vw;
-    animation: fadeup .7s;
+    animation: fadeup 1s;
 }
 .infoTitle{
     font-size: 48px;

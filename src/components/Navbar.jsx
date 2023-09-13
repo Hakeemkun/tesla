@@ -25,7 +25,7 @@ export const Navbar = () => {
                 <Link to={`/${car.model}`} >Order now</Link>
             </div>))}
         </div>
-        <div></div>
+        <div className='empty'></div>
     </div>
   )
 }

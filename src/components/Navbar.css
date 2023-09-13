@@ -102,6 +102,9 @@ h4{
     .menuItem img{
         width: 150px;
     }
+    .empty{
+        display: none;
+    }
 }
 @media (max-width:450px) {
     .links{
@@ -110,4 +113,5 @@ h4{
     .menuItem img{
         width: 130px;
     }
+
 }

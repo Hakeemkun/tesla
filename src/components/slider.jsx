@@ -12,10 +12,16 @@ export const Slider = (props) => {
       if(displayImg>0){
         setDisplayImg(displayImg-1)
       }
+      else{
+        setDisplayImg(2)
+      }
     }
     const handleRightClick=()=>{
       if(displayImg<2){
         setDisplayImg(displayImg+1)
+      }
+      else{
+        setDisplayImg(0)
       }
     }
 
