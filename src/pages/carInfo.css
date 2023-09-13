@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+}
+.navy{
+    width: 100%;
+    background-color: black;
+    height: 80px;
+}
+.logy img{
+    width: 150px;
+}
+.infoPage{
+    width: 100%;
+    overflow: hidden;
+}
+.infoBody{
+    margin: auto;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.info{
+    display: flex;
+    flex-direction:column ;
+    gap: 80px;
+    min-width: 15vw;
+}
+.infoTitle{
+    font-size: 48px;
+    font-weight:600;
+}
+.speed-range{
+    display: flex;
+    justify-content: space-between;
+    font-size: 28px;
+    font-weight: bold;
+}
+.price{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    width: 30vw;
+    background-color: rgb(222, 222, 222);
+    border-radius: 15px;
+    padding: 15px 0;
+    left: 15vw;
+    bottom: 0;
+    font-size: 25px;
+    font-weight: 700;
+}
+@media (max-width:1100px) {
+    .infoBody{
+        flex-direction: column;
+    }
+    .price{
+        position: relative;
+        left: 0;
+    }
+    .imgSlider{
+        height: 70vh;
+        width: 80%;
+    }
+}
+@media (max-width:750px) {
+    .imgSlider{
+        height: 40vh;
+    }
+    .price{
+        font-size: 18px;
+        width: 70vw;
+    }
+}
+@media (max-width:450px) {
+    .imgSlider{
+        height: 30vh;
+        width: 100%;
+    }
+
+}
