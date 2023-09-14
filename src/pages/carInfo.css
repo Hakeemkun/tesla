@@ -30,7 +30,6 @@
     flex-direction:column ;
     gap: 80px;
     min-width: 15vw;
-    animation: fadeup 1s;
 }
 .infoTitle{
     font-size: 48px;
@@ -84,8 +83,4 @@
         width: 100%;
     }
 
-}
-@keyframes fadeup {
-    from{opacity: 0; transform: translateY(30px);}
-    to{opacity: 1;transform: translateY(0);}
 }

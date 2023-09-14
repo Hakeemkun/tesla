@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { CaretLeft } from 'phosphor-react'
 import { CaretRight } from 'phosphor-react'
 import './slider.css'
@@ -24,6 +24,17 @@ export const Slider = (props) => {
         setDisplayImg(0)
       }
     }
+
+    useEffect(()=>{
+
+        if(document.documentElement.clientWidth<750){
+          setDisplayArrow(true)
+        }
+        else{
+          setDisplayArrow(false)
+        }
+    
+    },[])
 
   return (
     

@@ -1,17 +1,19 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect,useState } from 'react';
 import { Navbar } from '../components/Navbar';
 import { Link } from 'react-router-dom';
 import './Home.css';
 import video1 from '../assets/model3.mp4';
 import { motion } from 'framer-motion';
 
-export const Home = () => {
+export const Home = (props) => {
+
 
   return (
-    <>
-      <Navbar></Navbar>
+    < div className='home' >
+      <Navbar navStyle={props.navStyle} logoColor={props.logoColor} ></Navbar>
+      <div className='homeContent' >
       <div className='hero'>
-        <motion.div className='heroContent' >
+        <motion.div  className='heroContent' initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:false,amount:'all'}} transition={{duration:.7}} >
           <div className='upper'>
             <h1>Model 3</h1>
             <h3>from $29,740*</h3>
@@ -29,7 +31,7 @@ export const Home = () => {
       </div>
 
       <div className='hero2'>
-        <motion.div className='heroContent' >
+        <motion.div className='heroContent'initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:false,amount:'all'}} transition={{duration:.7}} >
           <div className='upper'>
             <h1>Model Y</h1>
             <h3>from $36,090*</h3>
@@ -46,7 +48,7 @@ export const Home = () => {
       </div>
 
       <div className='hero3'>
-        <motion.div className='heroContent' >
+        <motion.div className='heroContent' initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:false,amount:'all'}} transition={{duration:.7}} >
           <div className='upper'>
             <h1>Model S</h1>
             <h3>from $72,090*</h3>
@@ -63,7 +65,7 @@ export const Home = () => {
       </div>
 
       <div className='hero4'>
-        <motion.div className='heroContent' >
+        <motion.div className='heroContent' initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:false,amount:'all'}} transition={{duration:.7}} >
           <div className='upper'>
             <h1>Model X</h1>
             <h3>from $68,090*</h3>
@@ -78,6 +80,7 @@ export const Home = () => {
           </div>
         </motion.div>
       </div>
-    </>
+      </div>
+    </div>
   );
 };

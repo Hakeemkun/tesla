@@ -1,4 +1,5 @@
 
+
 .navbar{
     width: 100vw;
     padding: 0 100px;
@@ -19,7 +20,7 @@
     font-size: larger;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     transition: all 0.2s;
-    margin: 30px 150px 0 0;
+    margin: 29px 150px 0 0;
     padding: 2px 8px;
     cursor: pointer;
 }
@@ -88,6 +89,9 @@ h4{
     .links{
         gap: 60px;
     }
+    .vehicles{
+        margin: 29px 0 0 0;
+    }
     .menuItem img{
         width: 170px;
     }
@@ -102,8 +106,8 @@ h4{
     .menuItem img{
         width: 150px;
     }
-    .empty{
-        display: none;
+    .question{
+        margin-right: 15px;
     }
 }
 @media (max-width:450px) {
@@ -113,5 +117,10 @@ h4{
     .menuItem img{
         width: 130px;
     }
+
+}
+.question{
+    margin-top: 30px;
+    cursor: pointer;
 
 }
