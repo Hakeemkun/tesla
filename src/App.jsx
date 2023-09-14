@@ -15,7 +15,7 @@ export const App = () => {
   const [logoColor,setLogoColor]=useState(false)
 
   const handleScroll=()=>{
-    if (window.scrollY>150){
+    if (window.scrollY>20){
       setLogoColor(true)
       setNavStyle(true)
     }

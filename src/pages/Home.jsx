@@ -11,9 +11,10 @@ export const Home = (props) => {
   return (
     < div className='home' >
       <Navbar navStyle={props.navStyle} logoColor={props.logoColor} ></Navbar>
+      <div className='blacklayer' ></div>
       <div className='homeContent' >
       <div className='hero'>
-        <motion.div  className='heroContent' initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:false,amount:'all'}} transition={{duration:.7}} >
+        <motion.div  className='heroContent' initial={{opacity:0}} whileInView={{opacity:1}} viewport={{once:false,margin:'450px'}} transition={{duration:.7}} >
           <div className='upper'>
             <h1>Model 3</h1>
             <h3>from $29,740*</h3>
