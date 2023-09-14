@@ -43,7 +43,7 @@ export const Navbar = (props) => {
             {carsInfo.map((car)=>(<div className='menuItem' style={{animation:display?"fadein 1.2s" : "none"}} >
                 <img src={car.img1} />
                 <h4>{car.title}</h4>
-                <Link to={`/${car.model}`} >Order now</Link>
+                <Link to={`/tesla/${car.model}`} >Order now</Link>
             </div>))}
         </div>
         <div className='question'><Question style={{fontSize:30,color:navColor}}></Question></div>

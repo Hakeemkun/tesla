@@ -44,7 +44,7 @@ export const Home = (props) => {
               <h3>from $29,740*</h3>
             </div>
             <div className='down'>
-              <Link to={'/model3'} className='order'>
+              <Link to={'/tesla/model3'} className='order'>
                 Order Now
               </Link>
               <Link to={'/'} className='demo'>
@@ -62,7 +62,7 @@ export const Home = (props) => {
               <h3>from $36,090*</h3>
             </div>
             <div className='down'>
-              <Link to={'/modely'} className='order'>
+              <Link to={'/tesla/modely'} className='order'>
                 Order Now
               </Link>
               <Link to={'/'} className='demo'>
@@ -79,7 +79,7 @@ export const Home = (props) => {
               <h3>from $72,090*</h3>
             </div>
             <div className='down'>
-              <Link to={'/models'} className='order'>
+              <Link to={'/tesla/models'} className='order'>
                 Order Now
               </Link>
               <Link to={'/'} className='demo'>
@@ -96,7 +96,7 @@ export const Home = (props) => {
               <h3>from $68,090*</h3>
             </div>
             <div className='down'>
-              <Link to={'/modelx'} className='order'>
+              <Link to={'/tesla/modelx'} className='order'>
                 Order Now
               </Link>
               <Link to={'/'} className='demo'>
