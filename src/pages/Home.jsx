@@ -22,15 +22,17 @@ export const Home = (props) => {
   }
 
   const scrolledDiv=useRef()
+  useEffect(() => {
+    const div = scrolledDiv.current;
 
-  useEffect(()=>{
+    if (div) {
+      div.addEventListener('scroll', handleScroll);
 
-    scrolledDiv.current.addEventListener('scroll',handleScroll)
-    return()=>{
-      scrolledDiv.current.removeEventListener('scroll',handleScroll)
+      return () => {
+        div.removeEventListener('scroll', handleScroll);
+      };
     }
-  },[]
-  )
+  }, []);
 
   return (
     < div className='home' >
@@ -44,7 +46,7 @@ export const Home = (props) => {
               <h3>from $29,740*</h3>
             </div>
             <div className='down'>
-              <Link to={'/tesla/model3'} className='order'>
+              <Link to={'/model3'} className='order'>
                 Order Now
               </Link>
               <Link to={'/'} className='demo'>
@@ -62,7 +64,7 @@ export const Home = (props) => {
               <h3>from $36,090*</h3>
             </div>
             <div className='down'>
-              <Link to={'/tesla/modely'} className='order'>
+              <Link to={'/modely'} className='order'>
                 Order Now
               </Link>
               <Link to={'/'} className='demo'>
@@ -79,7 +81,7 @@ export const Home = (props) => {
               <h3>from $72,090*</h3>
             </div>
             <div className='down'>
-              <Link to={'/tesla/models'} className='order'>
+              <Link to={'/models'} className='order'>
                 Order Now
               </Link>
               <Link to={'/'} className='demo'>
@@ -96,7 +98,7 @@ export const Home = (props) => {
               <h3>from $68,090*</h3>
             </div>
             <div className='down'>
-              <Link to={'/tesla/modelx'} className='order'>
+              <Link to={'/modelx'} className='order'>
                 Order Now
               </Link>
               <Link to={'/'} className='demo'>
